@@ -1,0 +1,162 @@
+.BillTableStyle1 {
+	border: solid #000;
+	border-collapse: collapse;
+	border-width: 0px 1px 1px 1px;
+}
+
+.BillTableStyle2 {
+	border: solid #000;
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+}
+
+.TdStyle1 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: 1pt solid windowtext;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle1 {
+	text-indent: 25px;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle01 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle2 {
+	border-top: 1pt solid windowtext;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle3 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle03 {
+	font-weight: bold;
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle4 {
+	border-top: 1pt solid windowtext;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle5 {
+	font-weight: bold;
+	text-indent: 13px;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle05 {
+	text-indent: 13px;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle6 {
+	font-weight: bold;
+	border-top: 1pt dotted windowtext;
+	border-right: 1pt solid windowtext;
+	border-bottom: 1pt dotted windowtext;
+	border-left: none;
+}
+
+.BillTdStyle06 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: none;
+}
+
+.BillTdStyle7 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: 1pt solid windowtext;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle8 {
+	font-weight: bold;
+	text-indent: 13px;
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle9 {
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: none;
+}
+
+.BillTdStyle09 {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1pt solid windowtext;
+	border-left: none;
+}
+
+.BillTdStyle10 {
+	font-weight: bold;
+	border-top: 1pt solid windowtext;
+	border-right: none;
+	border-bottom: 1pt solid windowtext;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle11 {
+	font-weight: bold;
+	border-top: 1pt solid windowtext;
+	border-right: 1pt solid windowtext;
+	border-bottom: 1pt solid windowtext;
+	border-left: none;
+}
+
+.BillTdStyle12 {
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+}
+
+.BillTdStyle13 {
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1pt solid windowtext;
+}
+
+.BillTdStyle14 {
+	font-weight: bold;
+	border-top: none;
+	border-right: 1pt solid windowtext;
+	border-bottom: none;
+	border-left: none;
+}
