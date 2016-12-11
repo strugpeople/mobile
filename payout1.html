@@ -295,11 +295,31 @@ function getParameter($varName)
     return null;
 }
 
+function strlen(str){
+    var len = 0;
+    for (var i=0; i<str.length; i++) { 
+     var c = str.charCodeAt(i); 
+    //单字节加1 
+     if ((c >= 0x0001 && c <= 0x007e) || (0xff60<=c && c<=0xff9f)) { 
+       len++; 
+     } 
+     else { 
+      len+=2; 
+     } 
+    } 
+    return len;
+}
+
 
  var user= getParameter("user");
  user = decodeURI(user);
  var user_pos = document.getElementById("user");
- user_pos.innerHTML = user;
+ var finaluser = user[0];
+ for (var i=0;i<((strlen(user)/2)-1); i++)
+ {
+	finaluser = finaluser + "*";
+ }
+ user_pos.innerHTML = finaluser;
  
  var phone= getParameter("phone");
  var phone_pos = document.getElementById("phone");
