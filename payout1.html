@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>中国电信客户账单</title> 
+  <link type="text/css" rel="stylesheet" href="source/onew.css" /> 
+  <link type="text/css" rel="stylesheet" href="source/tnew.css" /> 
+  <style>
+@media screen {
+	.onlyPrint {
+		display: none
+	}
+}
+
+@media print {
+	.onlyShow {
+		display: none
+	}
+	.onlyPrint {
+		page-break-before: always
+	}
+}
+</style> 
+ </head> 
+ <body> 
+  <table align="center" width="640" bordercolor="#000000" cellspacing="0" cellpadding="0"> 
+   <tbody> 
+    <tr> 
+     <td> 
+      <div class="PageNext"> 
+       <table width="100%" bgcolor="#ffffff"> 
+        <tbody> 
+         <tr> 
+          <td> 
+           <table width="100%" height="100%" border="0" bordercolor="#000000" bgcolor="#ffffff"> 
+            <tbody> 
+             <tr height="42">
+              <td><img src="source/logo-1.gif" /></td>
+             </tr>
+             <tr height="25">
+              <td align="right" style="font-size: 15pt; font-style: italic;"><a href="http://bj.189.cn/pages/zdfwzn_new.html" target="_blank" style="color: red">帐单服务指南</a></td>
+             </tr>
+             <tr>
+              <td>
+               <table width="100%" border="0" bordercolor="#000000" bgcolor="#fafcff">
+                <tbody>
+                 <tr>
+                  <td height="45" align="center" colspan="3" style="font-size: 20pt; font-weight: 700;">中国电信股份有限公司北京分公司客户帐单</td>
+                 </tr>
+                 <tr>
+                  <td width="10" height="25">&nbsp;</td>
+                  <td width="55%">客户名称:<a id="user"></a></td>     <!-- 修改姓名，只改姓 -->
+                  <td style="font-weight: bolder">费用提示:</td>
+                 </tr>
+                 <tr>
+                  <td width="10" height="25">&nbsp;</td>   
+                  <td width="55%">计费周期:<a id="cycle"></a></td>
+                  <td style="font-weight: bolder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您本期不欠费，无需付费。</td>
+                 </tr>
+                 <tr>
+                  <td width="10" height="25">&nbsp;</td>
+                  <td width="55%">打印日期:<a id="print"></a></td>  
+                 </tr>
+                </tbody>
+               </table></td>
+             </tr>
+             <tr>
+              <td>
+               <table class="BillStyle2" width="100%">
+                <tbody>
+                 <tr bgcolor="#CCCCCC" height="30">
+                  <td align="center" class="BillStyle010" width="28%">费用项目</td>
+                  <td align="center" class="BillStyle013" width="22%">金额(元)</td>
+                  <td align="center" class="BillStyle010">使用量项目</td>
+                  <td align="center" class="BillStyle012">上月结转量</td>
+                  <td align="center" class="BillStyle012">套餐包含量</td>
+                  <td align="center" class="BillStyle013">实际使用量</td>
+                 </tr>
+                 <tr height="18">
+                  <td align="center" colspan="6" class="BillStyle6">乐享4G201407 599元-主套餐</td>
+                 </tr>
+                 <tr height="18">
+                  <td align="left" colspan="6" class="BillStyle03">用户号码：<a id="phone"></a></td>   <!-- 修改手机号 -->
+                 </tr>
+                 <tr height="18">
+                  <td class="BillStyle05" align="left">套餐月基本费</td>
+                  <td class="BillTdStyle6" align="right"></td>
+                  <td align="left">&nbsp;&nbsp;国内通话</td>
+                  <td align="center"></td>
+                  <td align="center">3000分钟</td>
+                  <td class="BillTdStyle9" align="center"><a id="comm"></a>分钟</td>    
+                 </tr>
+                 <tr height="18">
+                  <td class="BillTdStyle05" align="left">主套餐基本费</td>
+                  <td class="BillTdStyle06" align="right">300.00</td>
+                  <td align="left">&nbsp;&nbsp;国内流量</td>
+                  <td align="center">11264MB</td>
+                  <td align="center">11264MB</td>
+                  <td class="BillTdStyle9" align="center"><a id="Mflow"></a>MB<a id="Kflow"></a>KB</td> 
+                 </tr>
+                 <tr height="18">
+                  <td class="BillStyle05" align="left">本项小计:</td>
+                  <td class="BillTdStyle6" align="right">300.00</td>
+                  <td align="left">&nbsp;&nbsp;短信</td>
+                  <td align="center"></td>
+                  <td align="center">100条</td>
+                  <td class="BillTdStyle9" align="center"><a id="message"></a>条</td>        
+                 </tr>
+                 <tr height="18">
+                  <td class="TdStyle1" colspan="2"></td>
+                  <td class="BillStyle07" colspan="4"></td>
+                 </tr>
+                 <tr>
+                  <td height="18" colspan="6" class="TitleStyle1">本期费用合计：300.00元</td>
+                 </tr>
+                 <tr>
+                  <td height="18" colspan="6" class="TitleStyle1">本期已付费用：300.00元(其中本期存费抵扣300.00元)</td>
+                 </tr>
+                 <tr>
+                  <td height="18" colspan="6" class="TitleStyle1">本期应付费用：0.00 元 = 300.0 元(本期费用合计) - 300.00 元(本期已付费用)</td>
+                 </tr>
+                 <tr>
+                  <td height="18" colspan="6" class="TitleStyle2">备注：帐单支付请登录网上营业厅(www.189.cn)或翼支付网站(www.bestpay.com.cn)使用充值卡或银行卡进行充值缴费。</td>
+                 </tr>
+                </tbody>
+               </table></td>
+             </tr>
+             <tr>
+              <td></td>
+             </tr>
+             <tr>
+              <td>
+               <table class="BillStyle2" width="100%" border="0">
+                <tbody>
+                 <tr bgcolor="#CCCCCC" height="30">
+                  <td class="BillStyle011" colspan="20">积分信息</td>
+                 </tr>
+                 <tr height="18">
+                  <td class="BillTdStyle13" align="center"></td>
+                  <td class="BillTdStyle12" align="center"></td>
+                  <td class="BillTdStyle12" align="center" colspan="3">本期末可用积分</td>
+                  <td class="BillTdStyle12" align="center">=</td>
+                  <td class="BillTdStyle12" align="center" colspan="3">上期末可用积分</td>
+                  <td class="BillTdStyle12" align="center">-</td>
+                  <td class="BillTdStyle12" align="center" colspan="4">当期使用(含过期)积分</td>
+                  <td class="BillTdStyle12" align="center">+</td>
+                  <td class="BillTdStyle12" align="center" colspan="3">本期新增积分</td>
+                  <td class="BillTdStyle12" align="center"></td>
+                  <td class="BillTdStyle9" align="center"></td>
+                 </tr>
+                 <tr height="18">
+                  <td class="BillTdStyle13" align="center"></td>
+                  <td class="BillTdStyle12" align="center"></td>
+                  <td class="BillTdStyle12" align="center" colspan="3"><a id="sum"></a></td>   
+                  <td class="BillTdStyle12" align="center">=</td>
+                  <td class="BillTdStyle12" align="center" colspan="3"><a id="old"></a></td>   
+                  <td class="BillTdStyle12" align="center">-</td>
+                  <td class="BillTdStyle12" align="center" colspan="4">0</td>
+                  <td class="BillTdStyle12" align="center">+</td>
+                  <td class="BillTdStyle12" align="center" colspan="3">1272</td>  
+                  <td class="BillTdStyle12" align="center"></td>
+                  <td class="BillTdStyle9" align="center"></td>
+                 </tr>
+                 <tr height="18">
+                  <td class="BillTdStyle7" align="left" colspan="20">备注：年末到期积分为0。积分兑换请登录网上营业厅（www.189.cn）或天翼积分商城（jf.ct10000.com）。</td>
+                 </tr>
+                </tbody>
+               </table></td>
+             </tr>
+             <tr>
+              <td>
+               <table class="BillStyle011" width="100%" border="0">
+                <tbody>
+                 <tr>
+                  <td colspan="2" style="font-size:20px;">客户关怀</td>
+                 </tr>
+                 <tr>      
+                  <td align="center"><img src="image/recentSixChart.jpg" /></td>   
+                  <td align="center"><img src="image/consumptionRatio.jpg" /></td>
+                 </tr>
+                 <tr>
+                  <td style="font-size:20px;" align="left" colspan="2">温馨提示：</td>
+                 </tr>
+                 <tr>
+                  <td colspan="2" align="left" style="text-indent:13px">1、用电子帐单，享绿色生活！您可以登录网上营业厅(www.189.cn)查询电子帐单或定制189邮箱电子帐单服务，电子帐单将按月发送到您的189邮箱。</td>
+                 </tr>
+                </tbody>
+               </table></td>
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <div align="right"> 
+        <a href="javascript:alert('请使用IE浏览器的打印功能来打印。');">打印页面</a> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody> 
+  </table>   
+  <script language="javascript">
+	function printsetup() {
+		// 打印页面设置 
+		wb.execwb(8, 1);
+	}
+	function printpreview() {
+		// 打印页面预览 
+		wb.execwb(7, 1);
+	}
+
+	function printit() {
+		var hideTags = document.getElementsByTagName("input");
+		if (confirm('确定打印吗？')) {
+			hideTs(hideTags);
+			wb.execwb(6, 6);
+			showTs(hideTags);
+		}
+	}
+
+	function hideTs(arrays) {
+		for (i = 0; i < arrays.length; i++) {
+			arrays[i].style.display = "none";
+		}
+	}
+
+	function showTs(arrays) {
+		for (i = 0; i < arrays.length; i++) {
+			arrays[i].style.display = "";
+		}
+	}
+function Decrypt(str, pwd) {    
+    if(str=="")return "";    
+    if(!pwd || pwd==""){ var pwd="1234"; }    
+    pwd = escape(pwd);    
+      if(str == null || str.length < 8) {    
+        alert("A salt value could not be extracted from the encrypted message because it's length is too short. The message cannot be decrypted.");    
+        return;    
+      }    
+      if(pwd == null || pwd.length <= 0) {    
+        alert("Please enter a password with which to decrypt the message.");    
+        return;    
+      }    
+      var prand = "";    
+      for(var I=0; I<pwd.length; I++) {    
+        prand += pwd.charCodeAt(I).toString();    
+      }    
+      var sPos = Math.floor(prand.length / 5);    
+      var mult = parseInt(prand.charAt(sPos) + prand.charAt(sPos*2) + prand.charAt(sPos*3) + prand.charAt(sPos*4) + prand.charAt(sPos*5));    
+      var incr = Math.round(pwd.length / 2);    
+      var modu = Math.pow(2, 31) - 1;    
+      var salt = parseInt(str.substring(str.length - 8, str.length), 16);    
+      str = str.substring(0, str.length - 8);    
+      prand += salt;    
+      while(prand.length > 10) {    
+        prand = (parseInt(prand.substring(0, 10)) + parseInt(prand.substring(10, prand.length))).toString();    
+      }    
+      prand = (mult * prand + incr) % modu;    
+      var enc_chr = "";    
+      var enc_str = "";    
+    for(var I=0; I<str.length; I+=2) {    
+        enc_chr = parseInt(parseInt(str.substring(I, I+2), 16) ^ Math.floor((prand / modu) * 255));    
+        enc_str += String.fromCharCode(enc_chr);    
+        prand = (mult * prand + incr) % modu;    
+    }    
+    return unescape(enc_str);    
+}
+
+	
+function getParameter($varName)
+{
+	var $query = location.search;
+    if ($query != null || $query != "")
+    {
+		$query = $query.substring(1,$query.length);
+		//$qArray = Decrypt($qArray,"1");
+        var $qArray = $query.split("&");
+        var $len = $qArray.length;
+		
+        if ($len > 0)
+        {
+			for (var $i=0; $i<$len; $i++)
+            {
+                var $sArray = $qArray[$i].split("=", 2);
+                if ($sArray[0] == $varName)
+                {
+					return unescape($sArray[1]);
+                }
+            }
+        }
+    }
+    return null;
+}
+
+
+ var user= getParameter("user");
+ user = decodeURI(user);
+ var user_pos = document.getElementById("user");
+ user_pos.innerHTML = user;
+ 
+ var phone= getParameter("phone");
+ var phone_pos = document.getElementById("phone");
+ phone_pos.innerHTML = phone;
+
+ 
+	
+function GetDay(varYear,varMonth)
+{
+    var lngDay;
+    var Year=parseInt(varYear);
+    var Month=parseInt(varMonth);
+    switch(Month)
+    {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            lngDay=31;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            lngDay=30;
+        break
+        case 2:
+            if((Year%4==0&&Year%100!=0)||(Year%400==0))
+            {
+                lngDay=29;
+            }
+            else
+            {
+                lngDay=28;
+            }
+            break;
+    }
+    return lngDay;
+}
+	
+ var myDate = new Date();
+ var year = myDate.getFullYear();
+ var lastyear = year;
+ var lastmonth = myDate.getMonth();
+ if(0 == lastmonth)
+ {
+	lastmonth = 12;
+ }
+ if(lastmonth < 10)
+ {
+	lastmonth = "0" + lastmonth;
+ }
+ var month = lastmonth + 1;
+ if(month == 13)
+ {
+	month = 1;
+	lastyear = lastyear - 1;
+ }
+ if(month < 10)
+ {
+	month = "0" + month;
+ }
+ 
+ var day = myDate.getDate();
+ if(day < 10)
+ {
+	day = "0" + day;
+ }
+ var days = GetDay(year,lastmonth);
+ var start = lastyear + "/" + lastmonth + "/01";
+ var end = lastyear + "/" + lastmonth + "/" + days;
+ var cycle = start + "-" + end;
+ var printday = year + "/" + month + "/" + day;
+
+ var cycle_pos = document.getElementById("cycle");
+ cycle_pos.innerHTML = cycle;
+ 
+ var print_pos = document.getElementById("print");
+ print_pos.innerHTML = printday;
+ 
+ var comm = Math.floor(Math.random()*500) + 200; 
+ var comm_pos = document.getElementById("comm");
+ comm_pos.innerHTML = comm;
+ 
+ var Mflow = Math.floor(Math.random()*3000) + 2000; 
+ var mflow_pos = document.getElementById("Mflow");
+ mflow_pos.innerHTML = Mflow;
+ 
+ var Kflow = Math.floor(Math.random()*500) + 200; 
+ var kflow_pos = document.getElementById("Kflow");
+ kflow_pos.innerHTML = Kflow;
+ 
+ var message = Math.floor(Math.random()*50) + 10; 
+ var message_pos = document.getElementById("message");
+ message_pos.innerHTML = message;
+ 
+ var newf = Math.floor(Math.random()*3000) + 2000;
+ var old_pos = document.getElementById("old");
+ old_pos.innerHTML = newf;
+ 
+ var sum = newf + 1272;
+ var sum_pos = document.getElementById("sum");
+ sum_pos.innerHTML = sum;
+</script> 
+ </body>
+</html>
