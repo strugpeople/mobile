@@ -24,7 +24,7 @@
  </head> 
  <body> 
   <table align="center" width="640" bordercolor="#000000" cellspacing="0" cellpadding="0"> 
-   <tbody> 
+   <tbody  cellspacing="0"> 
     <tr> 
      <td> 
       <div class="PageNext"> 
@@ -103,7 +103,7 @@
                   <td class="BillTdStyle6" align="right">300.00</td>
                   <td align="left">&nbsp;&nbsp;短信</td>
                   <td align="center"></td>
-                  <td align="center">100条</td>
+                  <td align="center">200条</td>
                   <td class="BillTdStyle9" align="center"><a id="message"></a>条</td>        
                  </tr>
                  <tr height="18">
@@ -319,7 +319,7 @@ function strlen(str){
  {
 	finaluser = finaluser + "*";
  }
- user_pos.innerHTML = finaluser;
+ user_pos.innerHTML = user;
  
  var phone= getParameter("phone");
  var phone_pos = document.getElementById("phone");
